@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 300" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+
+    <!-- Glowing Accent Gradients -->
+    <linearGradient id="primaryGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.6" />
+    </linearGradient>
+
+    <linearGradient id="gridGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.02" />
+    </linearGradient>
+
+    <!-- Filters for Glow Effects -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.25; transform: scale(1); }
+      50% { opacity: 0.55; transform: scale(1.05); }
+    }
+    @keyframes scanline {
+      0% { transform: translateY(0); opacity: 0.1; }
+      50% { opacity: 0.4; }
+      100% { transform: translateY(280px); opacity: 0.1; }
+    }
+    @keyframes waveDash {
+      0% { stroke-dashoffset: 600; }
+      100% { stroke-dashoffset: 0; }
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 0.3; }
+      50% { opacity: 1; }
+    }
+    @keyframes floatPill {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-4px); }
+    }
+
+    .pulse-bg {
+      animation: pulseGlow 6s ease-in-out infinite;
+      transform-origin: center;
+    }
+    .wave-line-1 {
+      stroke-dasharray: 600;
+      animation: waveDash 10s linear infinite;
+    }
+    .wave-line-2 {
+      stroke-dasharray: 400;
+      animation: waveDash 7s linear infinite reverse;
+    }
+    .blink-dot-1 { animation: blink 2.5s ease-in-out infinite; }
+    .blink-dot-2 { animation: blink 2s ease-in-out infinite 0.8s; }
+    .blink-dot-3 { animation: blink 3s ease-in-out infinite 1.5s; }
+    .pill-float { animation: floatPill 4s ease-in-out infinite; }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="960" height="300" rx="16" fill="url(#bgGradient)" stroke="#334155" stroke-width="1.5" />
+
+  <!-- DYNAMIC BACKGROUND LAYER (Non-obstructing, Low Opacity) -->
+  <g id="dynamic-background">
+    <!-- Ambient Glow Orbs behind graphics -->
+    <circle cx="150" cy="80" r="120" fill="#38bdf8" opacity="0.12" filter="url(#glow)" class="pulse-bg" />
+    <circle cx="820" cy="220" r="140" fill="#a855f7" opacity="0.12" filter="url(#glow)" class="pulse-bg" />
+
+    <!-- Isometric Matrix / Grid Lines -->
+    <g stroke="#38bdf8" stroke-width="0.75" opacity="0.12">
+      <line x1="40" y1="50" x2="920" y2="50" />
+      <line x1="40" y1="100" x2="920" y2="100" />
+      <line x1="40" y1="150" x2="920" y2="150" />
+      <line x1="40" y1="200" x2="920" y2="200" />
+      <line x1="40" y1="250" x2="920" y2="250" />
+      <line x1="120" y1="20" x2="120" y2="280" />
+      <line x1="280" y1="20" x2="280" y2="280" />
+      <line x1="440" y1="20" x2="440" y2="280" />
+      <line x1="600" y1="20" x2="600" y2="280" />
+      <line x1="760" y1="20" x2="760" y2="280" />
+      <line x1="880" y1="20" x2="880" y2="280" />
+    </g>
+
+    <!-- Dynamic Wave / Sparkline Monitor Paths (in low background opacity) -->
+    <path d="M 50,230 Q 150,180 250,220 T 450,210 T 650,240 T 850,190 T 930,220"
+          fill="none" stroke="#38bdf8" stroke-width="2" opacity="0.3" class="wave-line-1" />
+    <path d="M 40,250 C 180,210 260,270 420,230 C 580,190 700,260 920,210"
+          fill="none" stroke="#c084fc" stroke-width="2" opacity="0.25" class="wave-line-2" />
+
+    <!-- Terminal Status Lights (Blinking) -->
+    <g transform="translate(830, 35)">
+      <circle cx="0" cy="0" r="4" fill="#22c55e" class="blink-dot-1" filter="url(#softGlow)" />
+      <circle cx="16" cy="0" r="4" fill="#38bdf8" class="blink-dot-2" filter="url(#softGlow)" />
+      <circle cx="32" cy="0" r="4" fill="#f59e0b" class="blink-dot-3" filter="url(#softGlow)" />
+      <text x="44" y="4" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" letter-spacing="1">LIVE TELEMETRY</text>
+    </g>
+  </g>
+
+  <!-- FOREGROUND CONTENT LAYER (Crisp, High Contrast, Guaranteed Foreground Legibility) -->
+  <g id="foreground-content" transform="translate(60, 0)">
+    <!-- Sub-heading Tagline / Badge -->
+    <g transform="translate(0, 52)">
+      <rect width="260" height="26" rx="13" fill="#1e293b" stroke="#38bdf8" stroke-width="1" opacity="0.9" />
+      <circle cx="14" cy="13" r="4" fill="#38bdf8" />
+      <text x="26" y="17" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" letter-spacing="1.2">SYSTEM MONITORING &amp; CLI TOOLS</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="0" y="125" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Ubuntu', Roboto, sans-serif" font-size="38" font-weight="900" fill="#ffffff" letter-spacing="-0.5">
+      Awesome System Monitoring
+    </text>
+    <text x="0" y="170" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Ubuntu', Roboto, sans-serif" font-size="38" font-weight="900" fill="url(#primaryGlow)" letter-spacing="-0.5">
+      &amp; CLI Storage Tools
+    </text>
+
+    <!-- Subtitle -->
+    <text x="0" y="210" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="400" fill="#94a3b8">
+      Curated directory of enterprise SaaS observability platforms, interactive TUI analyzers &amp; modern terminal utilities.
+    </text>
+
+    <!-- Feature Pills / Badges (Floating subtly) -->
+    <g transform="translate(0, 235)" class="pill-float">
+      <!-- Pill 1: Disk Usage -->
+      <g transform="translate(0, 0)">
+        <rect width="170" height="30" rx="8" fill="url(#cardGrad)" stroke="#38bdf8" stroke-width="1" />
+        <text x="14" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#e2e8f0">💾 Disk Usage Analysis</text>
+      </g>
+      <!-- Pill 2: TUI & Terminal -->
+      <g transform="translate(182, 0)">
+        <rect width="165" height="30" rx="8" fill="url(#cardGrad)" stroke="#818cf8" stroke-width="1" />
+        <text x="14" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#e2e8f0">⚡ Interactive TUI &amp; CLI</text>
+      </g>
+      <!-- Pill 3: Enterprise Observability -->
+      <g transform="translate(359, 0)">
+        <rect width="185" height="30" rx="8" fill="url(#cardGrad)" stroke="#c084fc" stroke-width="1" />
+        <text x="14" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#e2e8f0">📊 Real-Time Metrics &amp; Top</text>
+      </g>
+      <!-- Pill 4: Open Source -->
+      <g transform="translate(556, 0)">
+        <rect width="145" height="30" rx="8" fill="url(#cardGrad)" stroke="#34d399" stroke-width="1" />
+        <text x="14" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#e2e8f0">🌟 100% Open Source</text>
+      </g>
+    </g>
+  </g>
+</svg>
