@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-System-Monitoring-CLI-Tools/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-System-Monitoring-CLI-Tools?style=flat-square&logo=github&color=gold" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-System-Monitoring-CLI-Tools/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-System-Monitoring-CLI-Tools?style=flat-square&logo=github&color=gold" alt="GitHub_Stars"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-System-Monitoring-CLI-Tools/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-System-Monitoring-CLI-Tools?style=flat-square&logo=github&color=blue" alt="GitHub Forks"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-System-Monitoring-CLI-Tools/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-System-Monitoring-CLI-Tools/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square" alt="License"/></a>
@@ -26,7 +26,7 @@ Whether you are debugging unexpected disk exhaustion on remote production Kubern
 - [🔍 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
 - [🏢 SaaS & Commercial Observability Platforms](#-saas--commercial-observability-platforms)
 - [💻 Open-Source CLI & TUI System Monitoring Utilities](#-open-source-cli--tui-system-monitoring-utilities)
-  - [Top-Tier Repositories (Ranked by GitHub Stars)](#top-tier-repositories-ranked-by-github-stars)
+  - [Top-Tier Repositories (Ranked by GitHub_Stars)](#top-tier-repositories-ranked-by-github-stars)
 - [🛠️ Tool Selection Matrix & Workflow Recommendations](#️-tool-selection-matrix--workflow-recommendations)
 - [🤝 How to Contribute](#-how-to-contribute)
 - [⚖️ Disclaimer](#️-disclaimer)
@@ -67,131 +67,131 @@ The table below summarizes leading commercial platforms for system telemetry, ho
 
 ## 💻 Open-Source CLI & TUI System Monitoring Utilities
 
-The following open-source utilities provide terminal-based process inspection, hardware telemetry, filesystem browsing, and disk usage visualization. They are ranked in **descending order by GitHub star count**.
+The following open-source utilities provide terminal-based process inspection, hardware telemetry, filesystem browsing, and disk usage visualization. They are ranked in **descending order by GitHub Stars_Count**.
 
-### Top-Tier Repositories (Ranked by GitHub Stars)
+### Top-Tier Repositories (Ranked by GitHub_Stars)
 
-1. **[dive](https://github.com/wagoodman/dive)** [![GitHub stars](https://img.shields.io/github/stars/wagoodman/dive?style=social&color=white)](https://github.com/wagoodman/dive/stargazers) 🐳  
+1. **[dive](https://github.com/wagoodman/dive)** [![GitHub_Stars](https://img.shields.io/github/stars/wagoodman/dive?style=social&color=white)](https://github.com/wagoodman/dive/stargazers) 🐳  
    *A tool for exploring a docker image, layer contents, and discovering ways to shrink your image size.*  
    - **Highlights**: Breaks down container layers, highlights modified/deleted files contributing to wasted storage, and integrates into CI pipelines with custom efficiency thresholds.  
    - **Install**: `brew install dive` or `docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock wagoodman/dive:latest <image-tag>`
 
-2. **[btop](https://github.com/aristocratos/btop)** [![GitHub stars](https://img.shields.io/github/stars/aristocratos/btop?style=social&color=white)](https://github.com/aristocratos/btop/stargazers) 🎛️  
+2. **[btop](https://github.com/aristocratos/btop)** [![GitHub_Stars](https://img.shields.io/github/stars/aristocratos/btop?style=social&color=white)](https://github.com/aristocratos/btop/stargazers) 🎛️  
    *A modern, responsive C++ resource monitor displaying processor, memory, disks, network, and processes.*  
    - **Highlights**: Gorgeous responsive TUI layout, full mouse support, real-time disk I/O activity graphs, and hardware temperature sensors.  
    - **Install**: `brew install btop` or `apt install btop` or `pacman -S btop`
 
-3. **[Glances](https://github.com/nicolargo/glances)** [![GitHub stars](https://img.shields.io/github/stars/nicolargo/glances?style=social&color=white)](https://github.com/nicolargo/glances/stargazers) 👁️  
+3. **[Glances](https://github.com/nicolargo/glances)** [![GitHub_Stars](https://img.shields.io/github/stars/nicolargo/glances?style=social&color=white)](https://github.com/nicolargo/glances/stargazers) 👁️  
    *Glances an Eye on your system. A top/htop alternative for GNU/Linux, BSD, Mac OS and Windows.*  
    - **Highlights**: Written in Python; features a standalone curses TUI, a built-in Web GUI (`glances -w`), and a REST JSON API for remote server fleet telemetry.  
    - **Install**: `pip install glances` or `brew install glances`
 
-4. **[fastfetch](https://github.com/fastfetch-cli/fastfetch)** [![GitHub stars](https://img.shields.io/github/stars/fastfetch-cli/fastfetch?style=social&color=white)](https://github.com/fastfetch-cli/fastfetch/stargazers) 🚀  
+4. **[fastfetch](https://github.com/fastfetch-cli/fastfetch)** [![GitHub_Stars](https://img.shields.io/github/stars/fastfetch-cli/fastfetch?style=social&color=white)](https://github.com/fastfetch-cli/fastfetch/stargazers) 🚀  
    *A maintained, feature-rich and performance-oriented neofetch-like tool for system information display written in C.*  
    - **Highlights**: Blazingly fast boot/login telemetry summary of OS version, kernel, CPU, GPU, memory, and mounted disk partitions.  
    - **Install**: `brew install fastfetch` or `apt install fastfetch` or `scoop install fastfetch`
 
-5. **[eza](https://github.com/eza-community/eza)** [![GitHub stars](https://img.shields.io/github/stars/eza-community/eza?style=social&color=white)](https://github.com/eza-community/eza/stargazers) 📂  
+5. **[eza](https://github.com/eza-community/eza)** [![GitHub_Stars](https://img.shields.io/github/stars/eza-community/eza?style=social&color=white)](https://github.com/eza-community/eza/stargazers) 📂  
    *A modern, actively maintained replacement for ls written in Rust.*  
    - **Highlights**: Color-coded file metadata, Git status integration, extended file attributes, file size bar charts, and recursive tree navigation (`eza --tree`).  
    - **Install**: `cargo install eza` or `brew install eza`
 
-6. **[ctop](https://github.com/bcicen/ctop)** [![GitHub stars](https://img.shields.io/github/stars/bcicen/ctop?style=social&color=white)](https://github.com/bcicen/ctop/stargazers) 📦  
+6. **[ctop](https://github.com/bcicen/ctop)** [![GitHub_Stars](https://img.shields.io/github/stars/bcicen/ctop?style=social&color=white)](https://github.com/bcicen/ctop/stargazers) 📦  
    *Top-like interface for container metrics across Docker and Kubernetes runtimes.*  
    - **Highlights**: Real-time CPU, memory, network, and block I/O bandwidth tracking for active containers with a single terminal dashboard.  
    - **Install**: `brew install ctop` or download standalone Go binary
 
-7. **[duf](https://github.com/muesli/duf)** [![GitHub stars](https://img.shields.io/github/stars/muesli/duf?style=social&color=white)](https://github.com/muesli/duf/stargazers) 📊  
+7. **[duf](https://github.com/muesli/duf)** [![GitHub_Stars](https://img.shields.io/github/stars/muesli/duf?style=social&color=white)](https://github.com/muesli/duf/stargazers) 📊  
    *Disk Usage/Free Utility — a modern, colorized, and human-friendly replacement for `df`.*  
    - **Highlights**: Color-coded storage bars, automatic device classification (local, network, pseudo filesystems), JSON export, and flexible `--sort` options.  
    - **Install**: `brew install duf` or `apt install duf` or `go install github.com/muesli/duf@latest`
 
-8. **[bottom](https://github.com/ClementTsang/bottom)** [![GitHub stars](https://img.shields.io/github/stars/ClementTsang/bottom?style=social&color=white)](https://github.com/ClementTsang/bottom/stargazers) 📉  
+8. **[bottom](https://github.com/ClementTsang/bottom)** [![GitHub_Stars](https://img.shields.io/github/stars/ClementTsang/bottom?style=social&color=white)](https://github.com/ClementTsang/bottom/stargazers) 📉  
    *Yet another cross-platform graphical process/system monitor in Rust.*  
    - **Highlights**: Fully customizable dashboard widgets for CPU, RAM, disk read/write throughput, temperature sensors, and process termination.  
    - **Install**: `cargo install bottom` or `brew install bottom` or `scoop install bottom`
 
-9. **[broot](https://github.com/Canop/broot)** [![GitHub stars](https://img.shields.io/github/stars/Canop/broot?style=social&color=white)](https://github.com/Canop/broot/stargazers) 🌲  
+9. **[broot](https://github.com/Canop/broot)** [![GitHub_Stars](https://img.shields.io/github/stars/Canop/broot?style=social&color=white)](https://github.com/Canop/broot/stargazers) 🌲  
    *A new way to see and navigate directory trees in the terminal.*  
    - **Highlights**: Calculates aggregate directory sizes during navigation, applies fuzzy searches across deep filesystem hierarchies, and launches shell actions.  
    - **Install**: `cargo install broot` or `brew install broot`
 
-10. **[dust](https://github.com/bootandy/dust)** [![GitHub stars](https://img.shields.io/github/stars/bootandy/dust?style=social&color=white)](https://github.com/bootandy/dust/stargazers) 🧹  
+10. **[dust](https://github.com/bootandy/dust)** [![GitHub_Stars](https://img.shields.io/github/stars/bootandy/dust?style=social&color=white)](https://github.com/bootandy/dust/stargazers) 🧹  
     *A more intuitive version of du written in Rust.*  
     - **Highlights**: Shows directory sizes as an ASCII tree bar chart, aggregates hard links correctly, and scans multi-core filesystems in parallel.  
     - **Install**: `cargo install du-dust` or `brew install dust`
 
-11. **[bandwhich](https://github.com/imsnif/bandwhich)** [![GitHub stars](https://img.shields.io/github/stars/imsnif/bandwhich?style=social&color=white)](https://github.com/imsnif/bandwhich/stargazers) 📡  
+11. **[bandwhich](https://github.com/imsnif/bandwhich)** [![GitHub_Stars](https://img.shields.io/github/stars/imsnif/bandwhich?style=social&color=white)](https://github.com/imsnif/bandwhich/stargazers) 📡  
     *CLI terminal bandwidth utilization tool that attributes network traffic to specific running processes.*  
     - **Highlights**: Sniffs live network interface packets, resolves hostnames asynchronously, and shows real-time upload/download speeds per PID.  
     - **Install**: `cargo install bandwhich` or `brew install bandwhich`
 
-12. **[htop](https://github.com/htop-dev/htop)** [![GitHub stars](https://img.shields.io/github/stars/htop-dev/htop?style=social&color=white)](https://github.com/htop-dev/htop/stargazers) 📋  
+12. **[htop](https://github.com/htop-dev/htop)** [![GitHub_Stars](https://img.shields.io/github/stars/htop-dev/htop?style=social&color=white)](https://github.com/htop-dev/htop/stargazers) 📋  
     *The industry standard interactive process viewer for Unix systems.*  
     - **Highlights**: Colorized per-core CPU meters, interactive process tree hierarchy, keyboard shortcuts for sending signals (`SIGTERM`, `SIGKILL`), and sorting.  
     - **Install**: Standard package manager (`apt install htop`, `brew install htop`, `yum install htop`)
 
-13. **[dua-cli](https://github.com/Byron/dua-cli)** [![GitHub stars](https://img.shields.io/github/stars/Byron/dua-cli?style=social&color=white)](https://github.com/Byron/dua-cli/stargazers) ⚡  
+13. **[dua-cli](https://github.com/Byron/dua-cli)** [![GitHub_Stars](https://img.shields.io/github/stars/Byron/dua-cli?style=social&color=white)](https://github.com/Byron/dua-cli/stargazers) ⚡  
     *View disk space usage and delete unwanted data, fast (in Rust).*  
     - **Highlights**: Blazing multi-threaded directory walking with an interactive TUI mode (`dua i`) supporting directory traversal and queued file deletion.  
     - **Install**: `cargo install dua-cli` or `brew install dua-cli`
 
-14. **[procs](https://github.com/dalance/procs)** [![GitHub stars](https://img.shields.io/github/stars/dalance/procs?style=social&color=white)](https://github.com/dalance/procs/stargazers) 🔍  
+14. **[procs](https://github.com/dalance/procs)** [![GitHub_Stars](https://img.shields.io/github/stars/dalance/procs?style=social&color=white)](https://github.com/dalance/procs/stargazers) 🔍  
     *A modern replacement for ps written in Rust.*  
     - **Highlights**: Automatic multi-color columns, keyword search across PID/user/command, Docker container name resolution, and CPU/memory percentage indicators.  
     - **Install**: `cargo install procs` or `brew install procs`
 
-15. **[gdu](https://github.com/dundee/gdu)** [![GitHub stars](https://img.shields.io/github/stars/dundee/gdu?style=social&color=white)](https://github.com/dundee/gdu/stargazers) 🏃  
+15. **[gdu](https://github.com/dundee/gdu)** [![GitHub_Stars](https://img.shields.io/github/stars/dundee/gdu?style=social&color=white)](https://github.com/dundee/gdu/stargazers) 🏃  
     *Fast disk usage analyzer with console interface written in Go.*  
     - **Highlights**: Significantly faster than classic `ncdu` on large SSD/NVMe drives due to parallel directory scanning; handles sparse files and JSON outputs.  
     - **Install**: `brew install gdu` or `curl -L https://github.com/dundee/gdu/releases/latest/download/gdu_linux_amd64.tgz | tar xz`
 
-16. **[diskonaut](https://github.com/imsnif/diskonaut)** [![GitHub stars](https://img.shields.io/github/stars/imsnif/diskonaut?style=social&color=white)](https://github.com/imsnif/diskonaut/stargazers) 🗺️  
+16. **[diskonaut](https://github.com/imsnif/diskonaut)** [![GitHub_Stars](https://img.shields.io/github/stars/imsnif/diskonaut?style=social&color=white)](https://github.com/imsnif/diskonaut/stargazers) 🗺️  
     *Terminal visual disk space navigator written in Rust.*  
     - **Highlights**: Draws an interactive treemap directly within your terminal window; navigate into rectangular storage blocks and delete space hogs with confirmation.  
     - **Install**: `cargo install diskonaut` or `brew install diskonaut`
 
-17. **[gotop](https://github.com/xxxserxxx/gotop)** [![GitHub stars](https://img.shields.io/github/stars/xxxserxxx/gotop?style=social&color=white)](https://github.com/xxxserxxx/gotop/stargazers) 📈  
+17. **[gotop](https://github.com/xxxserxxx/gotop)** [![GitHub_Stars](https://img.shields.io/github/stars/xxxserxxx/gotop?style=social&color=white)](https://github.com/xxxserxxx/gotop/stargazers) 📈  
     *A terminal-based graphical activity monitor inspired by gtop and vtop, written in Go.*  
     - **Highlights**: Clean minimalist CPU/memory sparkline charts, disk mount tables, network throughput graphs, and configurable color schemes.  
     - **Install**: `brew install gotop` or download precompiled release binary
 
-18. **[zenith](https://github.com/bvaisvil/zenith)** [![GitHub stars](https://img.shields.io/github/stars/bvaisvil/zenith?style=social&color=white)](https://github.com/bvaisvil/zenith/stargazers) 🏔️  
+18. **[zenith](https://github.com/bvaisvil/zenith)** [![GitHub_Stars](https://img.shields.io/github/stars/bvaisvil/zenith?style=social&color=white)](https://github.com/bvaisvil/zenith/stargazers) 🏔️  
     *Sort of like top or htop, but with zoom-able history charts, CPU, GPU, memory, disk, and network stats.*  
     - **Highlights**: Features NVIDIA/AMD GPU utilization graphs, disk I/O metrics, and zoomable temporal charts navigating historical performance bottlenecks.  
     - **Install**: `cargo install zenith` or `brew install zenith`
 
-19. **[erdtree](https://github.com/solidiquis/erdtree)** [![GitHub stars](https://img.shields.io/github/stars/solidiquis/erdtree?style=social&color=white)](https://github.com/solidiquis/erdtree/stargazers) 🌱  
+19. **[erdtree](https://github.com/solidiquis/erdtree)** [![GitHub_Stars](https://img.shields.io/github/stars/solidiquis/erdtree?style=social&color=white)](https://github.com/solidiquis/erdtree/stargazers) 🌱  
     *A modern, cross-platform, multi-threaded file-tree and disk usage analyzer in Rust.*  
     - **Highlights**: Combines features of `tree`, `du`, and `find`; respects `.gitignore` rules, supports custom depth thresholds, and renders Nerd Font icons.  
     - **Install**: `cargo install erdtree` or `brew install erdtree`
 
-20. **[nat](https://github.com/willdoescode/nat)** [![GitHub stars](https://img.shields.io/github/stars/willdoescode/nat?style=social&color=white)](https://github.com/willdoescode/nat/stargazers) 🎨  
+20. **[nat](https://github.com/willdoescode/nat)** [![GitHub_Stars](https://img.shields.io/github/stars/willdoescode/nat?style=social&color=white)](https://github.com/willdoescode/nat/stargazers) 🎨  
     *`ls` alternative with useful file information and a splash of color.*  
     - **Highlights**: Displays directory contents with Nerd Font file icons, human-readable byte sizes, file permissions, and tree views (`nat ls -T`).  
     - **Install**: `cargo install nat-ls`
 
-21. **[ncdu](https://github.com/rofl0r/ncdu)** [![GitHub stars](https://img.shields.io/github/stars/rofl0r/ncdu?style=social&color=white)](https://github.com/rofl0r/ncdu/stargazers) 📟  
+21. **[ncdu](https://github.com/rofl0r/ncdu)** [![GitHub_Stars](https://img.shields.io/github/stars/rofl0r/ncdu?style=social&color=white)](https://github.com/rofl0r/ncdu/stargazers) 📟  
     *NCurses Disk Usage analyzer for POSIX systems.*  
     - **Highlights**: Ultra-lightweight C implementation with zero dependencies; export and import scan snapshots (`ncdu -o scan.json`) for remote offline triage.  
     - **Install**: `apt install ncdu` or `brew install ncdu` or `pacman -S ncdu`
 
-22. **[duc](https://github.com/zevv/duc)** [![GitHub stars](https://img.shields.io/github/stars/zevv/duc?style=social&color=white)](https://github.com/zevv/duc/stargazers) 🗃️  
+22. **[duc](https://github.com/zevv/duc)** [![GitHub_Stars](https://img.shields.io/github/stars/zevv/duc?style=social&color=white)](https://github.com/zevv/duc/stargazers) 🗃️  
     *Library and suite of indexing tools for inspecting and visualizing disk usage across hundreds of millions of files.*  
     - **Highlights**: Indexes filesystem state into an embedded database (Tokyo Cabinet / SQLite) for instant rescanning without repeated full disk traversal.  
     - **Install**: `apt install duc` or build from source
 
-23. **[godu](https://github.com/viktomas/godu)** [![GitHub stars](https://img.shields.io/github/stars/viktomas/godu?style=social&color=white)](https://github.com/viktomas/godu/stargazers) 🧭  
+23. **[godu](https://github.com/viktomas/godu)** [![GitHub_Stars](https://img.shields.io/github/stars/viktomas/godu?style=social&color=white)](https://github.com/viktomas/godu/stargazers) 🧭  
     *Simple, fast Go utility for discovering large files and folders.*  
     - **Highlights**: Minimalist keyboard navigation, clean split view, and fast parallel scanning for home directories and server volumes.  
     - **Install**: `go install github.com/viktomas/godu@latest`
 
-24. **[tin-summer](https://github.com/vmchale/tin-summer)** [![GitHub stars](https://img.shields.io/github/stars/vmchale/tin-summer?style=social&color=white)](https://github.com/vmchale/tin-summer/stargazers) ☀️  
+24. **[tin-summer](https://github.com/vmchale/tin-summer)** [![GitHub_Stars](https://img.shields.io/github/stars/vmchale/tin-summer?style=social&color=white)](https://github.com/vmchale/tin-summer/stargazers) ☀️  
     *Find build artifacts and visualize disk usage (in Haskell).*  
     - **Highlights**: Optimized CLI command `sn` with subcommands (`sn f`, `sn ar`, `sn d`) specifically tuned to detect bloated build caches (Node `node_modules`, Rust `target`, Go build caches).  
     - **Install**: `cargo install tin-summer` or `cabal install tin-summer`
 
-25. **[dirstat-rs](https://github.com/scullionw/dirstat-rs)** [![GitHub stars](https://img.shields.io/github/stars/scullionw/dirstat-rs?style=social&color=white)](https://github.com/scullionw/dirstat-rs/stargazers) ⚡  
+25. **[dirstat-rs](https://github.com/scullionw/dirstat-rs)** [![GitHub_Stars](https://img.shields.io/github/stars/scullionw/dirstat-rs?style=social&color=white)](https://github.com/scullionw/dirstat-rs/stargazers) ⚡  
     *Fast disk usage CLI in Rust, inspired by WinDirStat.*  
     - **Highlights**: Multi-core recursive directory traversal via `rayon`, depth limits, and clean scriptable JSON output pipelines.  
     - **Install**: `cargo install dirstat-rs`
@@ -222,7 +222,7 @@ Contributions are warmly welcomed! Help keep this directory accurate, up-to-date
 2. **Create a topic branch**: `git checkout -b feature/add-new-monitoring-tool`.
 3. **Add or refine an entry** following existing formats:
    - For **SaaS**: specify exact starting tier pricing, explicit free tier / trial limitations, and company valuation/revenue metrics.
-   - For **Open-Source**: include owner/repo link, star badge (`style=social&color=white`) linking to the stargazers page, key highlights, and installation command.
+   - For **Open-Source**: include owner/repo link, Stars_Badge (`style=social&color=white`) linking to the stargazers page, key highlights, and installation command.
 4. **Submit a Pull Request** with a concise description of the added tool and why it fits the ecosystem.
 
 ---
